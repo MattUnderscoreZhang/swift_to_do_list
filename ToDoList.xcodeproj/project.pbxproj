@@ -10,6 +10,8 @@
 		3844784B2E9D81B20009ABC6 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 3844784A2E9D81B20009ABC6 /* Auth */; };
 		3844784D2E9D81B20009ABC6 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 3844784C2E9D81B20009ABC6 /* Storage */; };
 		3844784F2E9DA0ED0009ABC6 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3844784E2E9DA0ED0009ABC6 /* Supabase */; };
+		384478512E9DA4460009ABC6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 384478502E9DA4430009ABC6 /* .gitignore */; };
+		384478532E9DA46C0009ABC6 /* Development.xconfig in Resources */ = {isa = PBXBuildFile; fileRef = 384478522E9DA4670009ABC6 /* Development.xconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		3844781C2E9D80AA0009ABC6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3844782C2E9D80AB0009ABC6 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		384478362E9D80AB0009ABC6 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384478502E9DA4430009ABC6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		384478522E9DA4670009ABC6 /* Development.xconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = Development.xconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +88,8 @@
 		384478132E9D80AA0009ABC6 = {
 			isa = PBXGroup;
 			children = (
+				384478522E9DA4670009ABC6 /* Development.xconfig */,
+				384478502E9DA4430009ABC6 /* .gitignore */,
 				3844781E2E9D80AA0009ABC6 /* ToDoList */,
 				3844782F2E9D80AB0009ABC6 /* ToDoListTests */,
 				384478392E9D80AB0009ABC6 /* ToDoListUITests */,
@@ -227,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384478512E9DA4460009ABC6 /* .gitignore in Resources */,
+				384478532E9DA46C0009ABC6 /* Development.xconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RJ8PC8UAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -439,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RJ8PC8UAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

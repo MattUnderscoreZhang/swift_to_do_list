@@ -8,7 +8,8 @@
 import SwiftUI
 import Supabase
 
-let client = SupabaseClient(supabaseURL: URL(string: "https://lrpfahnvmcuhhkpqhsnj.supabase.co")!, supabaseKey: "publishable-or-anon-key")
+let supakey = Bundle.main.object(forInfoDictionaryKey: "SUPABASE_KEY") as! String
+let client = SupabaseClient(supabaseURL: URL(string: "https://lrpfahnvmcuhhkpqhsnj.supabase.co")!, supabaseKey: supakey)
 
 struct ContentView: View {
     var body: some View {
