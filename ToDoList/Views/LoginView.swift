@@ -8,42 +8,41 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
-        NavigationView{
-            VStack {
-                // header
-                HeaderView()
-                // login
-                Form {
-                    TextField("Email Address", text: $email)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                    Button {
-                        // attempt login
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            Text("Log In")
-                                .foregroundColor(.white)
-                                .bold()
-                        }
-                    }
+        VStack {
+            // header
+            HeaderView(
+                title: "To Do List",
+                subtitle: "Get things done",
+                angle: 15,
+                background: .pink
+            )
+            // login form
+            Form {
+                TextField("Email Address", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled(true)
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TDLButton(
+                    title: "Log In",
+                    color: .blue
+                ) {
+                    // attempt login
                 }
-                // create account
-                VStack {
-                    Text("New around here?")
-                    NavigationLink(
-                        "Create An Account",
-                        destination: RegisterView()
-                    )
-                }
-                .padding(.bottom, 50)
             }
+            // create account
+            VStack {
+                Text("New around here?")
+                NavigationLink(
+                    "Create An Account",
+                    destination: RegisterView()
+                )
+            }
+            .padding(.bottom, 50)
         }
     }
 }

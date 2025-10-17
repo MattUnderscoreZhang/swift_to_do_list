@@ -15,8 +15,11 @@ let supaclient = SupabaseClient(supabaseURL: URL(string: "https://lrpfahnvmcuhhk
 struct ToDoListApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView().onOpenURL {
-                url in supaclient.auth.handle(url)  // handles Supabase auth redirects
+            NavigationStack{
+                MainView()
+                    .onOpenURL {
+                        url in supaclient.auth.handle(url)  // handles Supabase auth redirects
+                    }
             }
         }
     }
