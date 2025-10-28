@@ -19,6 +19,11 @@ struct LoginView: View {
                 angle: 15,
                 background: .pink
             )
+            // error message
+            if !viewModel.errorMessage.isEmpty {
+                Text(viewModel.errorMessage)
+                    .foregroundColor(.red)
+            }
             // login form
             Form {
                 TextField("Email Address", text: $viewModel.email)
@@ -32,6 +37,7 @@ struct LoginView: View {
                     color: .blue
                 ) {
                     // attempt login
+                    viewModel.login()
                 }
             }
             // create account

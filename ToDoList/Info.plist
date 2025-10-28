@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SUPABASE_KEY</key>
+	<string>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxycGZhaG52bWN1aGhrcHFoc25qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAzNjcxMzYsImV4cCI6MjA3NTk0MzEzNn0.JY90jnzrDsWlYUDeLluwUO23cjpRp1pbRn5p6dDo_U0</string>
+</dict>
+</plist>

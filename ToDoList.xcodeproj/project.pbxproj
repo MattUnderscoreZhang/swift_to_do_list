@@ -11,7 +11,6 @@
 		3844784D2E9D81B20009ABC6 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 3844784C2E9D81B20009ABC6 /* Storage */; };
 		3844784F2E9DA0ED0009ABC6 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3844784E2E9DA0ED0009ABC6 /* Supabase */; };
 		384478512E9DA4460009ABC6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 384478502E9DA4430009ABC6 /* .gitignore */; };
-		384478532E9DA46C0009ABC6 /* Development.xconfig in Resources */ = {isa = PBXBuildFile; fileRef = 384478522E9DA4670009ABC6 /* Development.xconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +31,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3844781C2E9D80AA0009ABC6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3844782C2E9D80AB0009ABC6 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		384478362E9D80AB0009ABC6 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3844781C2E9D80AA0009ABC6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ToDoList.app; path = "/Users/mattzhang/CascadeProjects/todo_list/ToDoList/build/Debug-iphoneos/ToDoList.app"; sourceTree = "<absolute>"; };
+		3844782C2E9D80AB0009ABC6 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToDoListTests.xctest; path = "/Users/mattzhang/CascadeProjects/todo_list/ToDoList/build/Debug-iphoneos/ToDoList.app/PlugIns/ToDoListTests.xctest"; sourceTree = "<absolute>"; };
+		384478362E9D80AB0009ABC6 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToDoListUITests.xctest; path = "/Users/mattzhang/CascadeProjects/todo_list/ToDoList/build/Debug-iphoneos/ToDoListUITests-Runner.app/PlugIns/ToDoListUITests.xctest"; sourceTree = "<absolute>"; };
 		384478502E9DA4430009ABC6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		384478522E9DA4670009ABC6 /* Development.xconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = Development.xconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		384478B72EB0B07E0009ABC6 /* Exceptions for "ToDoList" folder in "ToDoList" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3844781B2E9D80AA0009ABC6 /* ToDoList */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3844781E2E9D80AA0009ABC6 /* ToDoList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				384478B72EB0B07E0009ABC6 /* Exceptions for "ToDoList" folder in "ToDoList" target */,
+			);
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
@@ -88,23 +99,11 @@
 		384478132E9D80AA0009ABC6 = {
 			isa = PBXGroup;
 			children = (
-				384478522E9DA4670009ABC6 /* Development.xconfig */,
 				384478502E9DA4430009ABC6 /* .gitignore */,
 				3844781E2E9D80AA0009ABC6 /* ToDoList */,
 				3844782F2E9D80AB0009ABC6 /* ToDoListTests */,
 				384478392E9D80AB0009ABC6 /* ToDoListUITests */,
-				3844781D2E9D80AA0009ABC6 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		3844781D2E9D80AA0009ABC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3844781C2E9D80AA0009ABC6 /* ToDoList.app */,
-				3844782C2E9D80AB0009ABC6 /* ToDoListTests.xctest */,
-				384478362E9D80AB0009ABC6 /* ToDoListUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +216,7 @@
 				384478492E9D81B20009ABC6 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3844781D2E9D80AA0009ABC6 /* Products */;
+			productRefGroup = 384478132E9D80AA0009ABC6;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -234,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				384478512E9DA4460009ABC6 /* .gitignore in Resources */,
-				384478532E9DA46C0009ABC6 /* Development.xconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +420,7 @@
 				DEVELOPMENT_TEAM = 4RJ8PC8UAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +450,7 @@
 				DEVELOPMENT_TEAM = 4RJ8PC8UAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
